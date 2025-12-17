@@ -4,9 +4,17 @@
 /xdebug
 /scripts
 /docs
+/build
+/config
+/src/Test
+
+DOCKER_ENV
+Dockerfile-php-build
+output.log
 
 .distignore
 .gitignore
+.gitattributes
 .editorconfig
 CONTRIBUTING.md
 docker-compose.yaml
