@@ -413,6 +413,11 @@ class Hooks
         HTTP2ServerPush::init();
     }
 
+    public function cacheTagsInit()
+    {
+        CacheTagsHeader::init();
+    }
+
     /*
      * php://input can only be read once before PHP 5.6, try to grab it ONLY if the request
      * is coming from the cloudflare proxy.  We store it in a global so \Cloudflare\APO\WordPress\Proxy

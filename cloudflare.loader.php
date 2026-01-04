@@ -43,6 +43,9 @@ if (defined('CLOUDFLARE_HTTP2_SERVER_PUSH_ACTIVE') && CLOUDFLARE_HTTP2_SERVER_PU
     add_action('init', array($cloudflareHooks, 'http2ServerPushInit'));
 }
 
+// Enable Cache Tags
+add_action('init', array($cloudflareHooks, 'cacheTagsInit'));
+
 add_action('init', array($cloudflareHooks, 'initAutomaticPlatformOptimization'));
 
 if (is_admin()) {

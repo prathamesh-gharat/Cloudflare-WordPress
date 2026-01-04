@@ -26,6 +26,9 @@ License: BSD-3-Clause
 // To enable error logging when HTTP/2 Server Push header size is exceeded:
 // define('CLOUDFLARE_HTTP2_SERVER_PUSH_LOG', true);
 
+// To enable debug headers for Cache Tags:
+// define('CLOUDFLARE_CACHE_TAGS_DEBUG', true);
+
 // Exit if accessed directly
 if (!defined('ABSPATH')) {
     exit;
